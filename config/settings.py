@@ -25,7 +25,7 @@ SECRET_KEY = 'ys0k&5#g-(qm$m9=l7n*sf%fmm%++qqdbxpg4slm!-7r4x=)17'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["secret-waters-57981.herokuapp.com", "localhost"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'zoho'
 ]
 
 MIDDLEWARE = [

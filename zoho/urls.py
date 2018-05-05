@@ -1,6 +1,7 @@
 
 from django.urls import path, include
+from zoho import views
 
 urlpatterns = [
-    path('/subscription/new', )
+    path('zoho', views.zoho)
 ]
