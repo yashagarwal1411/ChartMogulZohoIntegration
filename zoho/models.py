@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
+class Customer(models.Model):
+    zoho_id = models.CharField(max_length=255)
+    chartmogul_id = models.CharField(max_length=255)
+
+
+class Plan(models.Model):
+    zoho_id = models.CharField(max_length=255)
+    chartmogul_id = models.CharField(max_length=255)
