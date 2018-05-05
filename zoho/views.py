@@ -1,6 +1,8 @@
+import binascii
 from django.http import JsonResponse
 from django.shortcuts import render
 import json
+from urllib.parse import parse_qs
 
 # Create your views here.
 
@@ -18,9 +20,9 @@ config = chartmogul.Config(chart_mogul_account_token, chart_mogul_secret_key)
 
 @csrf_exempt
 def zoho(request):
-
-    if request.body:
-        data = request.body.decode('utf-8')
+    if request.method == "POST":
+        data = request.POST["payload"]
+        
         print("DATA")
         print(data)
         print(type(data))
