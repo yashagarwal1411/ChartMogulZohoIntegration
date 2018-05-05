@@ -1,0 +1,15 @@
+certifi==2018.4.16
+chardet==3.0.4
+chartmogul==1.1.7
+Django==2.0.5
+future==0.16.0
+gunicorn==19.8.1
+idna==2.6
+marshmallow==2.15.1
+promise==2.1
+pytz==2018.4
+requests==2.18.4
+six==1.11.0
+typing==3.6.4
+uritemplate==3.0.0
+urllib3==1.22
