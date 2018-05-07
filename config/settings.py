@@ -119,3 +119,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CHART_MOGUL = {
+    "account_token": "ef93433271637296bbb960c8e664b0bc",
+    "secret_key": "f3184442edb612acf395e0807a4f1c55"
+
+}
+
+ZOHO = {
+    "client_id": "1000.RV61VOE3HPHB55800RNPYVUME6GULW",
+    "client_secret": "59de843034067a4f275e74f4263d47252afa1b8372",
+    "data_source_uuid": "ds_d922a822-5090-11e8-afc6-5f5e6fd8a691"
+}

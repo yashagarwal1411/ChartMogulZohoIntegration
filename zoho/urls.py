@@ -3,5 +3,5 @@ from django.urls import path, include
 from zoho import views
 
 urlpatterns = [
-    path('zoho', views.zoho)
+    path('update', views.update_chart_mogul)
 ]
