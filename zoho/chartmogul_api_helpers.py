@@ -10,7 +10,7 @@ def create_customer(zoho_customer_id, first_name):
     :param first_name:
     :return:
     """
-    chartmogul.Customer.create(chartmogul_config, data={
+    return chartmogul.Customer.create(chartmogul_config, data={
         "data_source_uuid": zoho_data_source_uuid,
         "external_id": zoho_customer_id,
         "name": first_name
@@ -26,7 +26,7 @@ def create_plan(name, interval_count, interval_unit, zoho_plan_id):
     :param zoho_plan_id:
     :return:
     """
-    chartmogul.Plan.create(chartmogul_config, data={
+    return chartmogul.Plan.create(chartmogul_config, data={
         "data_source_uuid": zoho_data_source_uuid,
         "name": name,
         "interval_count": interval_count,
@@ -51,7 +51,7 @@ def create_invoice(chartmogul_customer_id, zoho_invoice_id, invoice_date, invoic
     :param payment_date:
     :return:
     """
-    chartmogul.Invoice.create(
+    return chartmogul.Invoice.create(
         chartmogul_config,
         uuid=chartmogul_customer_id,
         data={
